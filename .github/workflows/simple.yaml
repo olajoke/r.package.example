@@ -53,7 +53,8 @@ jobs:
           path: ${{ github.event.repository.name }}
 
       - name: Setup R 🔧
-        if: false
+        # The default is true; therefore, set to true or remove the line if you want a true setuu
+        if: true
         # We're using a third-party GitHub Action.
         uses: r-lib/actions/setup-r@v2
 
